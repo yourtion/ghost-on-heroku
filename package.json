@@ -15,7 +15,8 @@
   "author": "Yourtion <yourtion@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "casper": "github:tryghost/Casper#3.0.6",
     "ghost": "^3.4.0",
-    "casper": "github:tryghost/Casper#3.0.6"
+    "qiniu-store": "^0.2.0"
   }
 }

@@ -10,8 +10,17 @@ var appRoot = path.join(__dirname, "..");
 function createConfig() {
   var fileStorage, storage;
 
-  fileStorage = false;
-  storage = {};
+  fileStorage = true;
+  storage = {
+    active: "qiniu",
+    qiniu: {
+      accessKey: process.env.QN_KEY,
+      secretKey: process.env.QN_SEC,
+      bucket: process.env.QN_BUCKET,
+      domain: process.env.QN_DOMAIN,
+      format: "${year}/${month}/${name}${ext}"
+    }
+  };
 
   config = {
     url: process.env.APP_PUBLIC_URL,
