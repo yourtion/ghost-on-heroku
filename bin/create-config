@@ -25,7 +25,7 @@ function createConfig() {
       }
     },
     fileStorage: true,
-    storage = {
+    storage: {
       active: 'qn-store',
       'qn-store': {
         accessKey: process.env.QN_KEY,
@@ -40,7 +40,6 @@ function createConfig() {
         }
       }
     },
-    storage: storage,
     database: {
       client: "mysql",
       connection: getMysqlConfig(
