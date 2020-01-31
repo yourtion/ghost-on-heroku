@@ -4,7 +4,9 @@
   "description": "view.yourtion.com by Ghost on Heroku",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "logs": "heroku logs --tail",
+    "deploy": "git push heroku master && npm run logs",
+    "postinstall": "bash bin/copy-themes.sh"
   },
   "repository": {
     "type": "git",
@@ -13,6 +15,7 @@
   "author": "Yourtion <yourtion@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "ghost": "^3.4.0"
+    "ghost": "^3.4.0",
+    "casper": "github:tryghost/Casper#3.0.6"
   }
 }
