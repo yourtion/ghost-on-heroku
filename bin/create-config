@@ -26,20 +26,16 @@ function createConfig() {
     },
     fileStorage: true,
     storage: {
-      active: 'qn-store',
-      'qn-store': {
+      active: "qiniu",
+      qiniu: {
         accessKey: process.env.QN_KEY,
         secretKey: process.env.QN_SEC,
         bucket: process.env.QN_BUCKET,
-        origin: 'http://' + process.env.QN_DOMAIN,
-        uploadURL: process.env.QN_BUCKET  || "http://up-z2.qiniup.com",
-        fileKey: {
-          hashAsBasename: true,
-          prefix: 'YYYY/MM/', // {String} will be formated by moment.js, using `[]` to escape,
-          extname: true // keep file's extname
-        }
+        domain: process.env.QN_DOMAIN,
+        format: "${year}/${month}/${random}${ext}"
       }
     },
+    storage: storage,
     database: {
       client: "mysql",
       connection: getMysqlConfig(
