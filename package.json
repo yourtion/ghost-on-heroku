@@ -17,6 +17,7 @@
   "dependencies": {
     "casper": "github:tryghost/Casper#3.0.6",
     "ghost": "^3.4.0",
+    "roon": "github:tryghost/Roon#2.0.0",
     "qiniu-store": "^0.2.0"
   }
 }
