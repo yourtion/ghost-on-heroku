@@ -1,5 +1,5 @@
 themes=(
-	casper,
+	casper
 	roon
 )
 
