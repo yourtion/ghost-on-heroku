@@ -7,8 +7,7 @@
     "dev": "npm start",
     "logs": "heroku logs --tail",
     "deploy": "git push heroku master && npm run logs",
-    "postinstall": "bash bin/copy-themes.sh",
-    "heroku-postbuild": "node bin/create-config.js"
+    "postinstall": "bash bin/copy-themes.sh"
   },
   "repository": {
     "type": "git",
