@@ -48,7 +48,7 @@ const config = {
     port: process.env.PORT
   },
   paths: {
-    contentPath: path.join(appRoot, "/content/")
+    contentPath: "/app/content/"
   },
   imageOptimization: {
     resize: false
