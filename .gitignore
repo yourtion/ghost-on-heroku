@@ -61,6 +61,6 @@ dist
 package-lock.json
 .scannerwork
 
-content/data/ghost-dev.db
+content/data/ghost-local*
 content/themes/*
 !content/themes/yroon
