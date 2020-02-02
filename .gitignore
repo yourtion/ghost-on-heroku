@@ -63,3 +63,4 @@ package-lock.json
 
 content/data/ghost-dev.db
 content/themes/*
+!content/themes/yroon
