@@ -57,7 +57,7 @@
                     var words = get_text(post_content),
                         count = words.split(/\s+/).length,
                         read_time = Math.ceil((count / 150)),
-                        read_time_node = document.createTextNode(read_time + ' min read');
+                        read_time_node = document.createTextNode('预计阅读时间为 '+ read_time + ' 分钟');
                     document.getElementById('js-reading-time').appendChild(read_time_node);
                 }
             }
