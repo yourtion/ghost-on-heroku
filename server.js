@@ -12,13 +12,13 @@ ghost()
     process.exit(1);
   });
 
-process.on("SIGINT", () => {
-  console.log("On SIGINT");
+process.on("SIGTERM", () => {
+  console.log("On SIGTERM");
   if (!server) return process.exit(0);
   server
     .stop()
     .then(() => {
-      console.log("Bye !")
+      console.log("Bye !");
       process.exit(0);
     })
     .catch(err => {
